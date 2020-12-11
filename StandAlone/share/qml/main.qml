@@ -256,8 +256,8 @@ ApplicationWindow {
                 height: AkUnit.create(64 * AkTheme.controlScale, "dp").pixels
                 x: (parent.width - width) / 2
                 y: (parent.height - height) / 2
-                ToolTip.visible: hovered
-                ToolTip.text: qsTr("Take a photo")
+                //ToolTip.visible: hovered
+                //ToolTip.text: qsTr("Take a photo")
                 focus: true
                 enabled: recording.state == AkElement.ElementStateNull
                          && (videoLayer.state === AkElement.ElementStatePlaying
@@ -305,8 +305,8 @@ ApplicationWindow {
                 height: AkUnit.create(48 * AkTheme.controlScale, "dp").pixels
                 x: parent.width - width
                 y: (parent.height - height) / 2
-                ToolTip.visible: hovered
-                ToolTip.text: qsTr("Record video")
+                //ToolTip.visible: hovered
+                //ToolTip.text: qsTr("Record video")
                 enabled: videoLayer.state === AkElement.ElementStatePlaying
                          || cameraControls.state == ""
 
